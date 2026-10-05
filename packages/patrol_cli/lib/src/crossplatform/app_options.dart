@@ -496,6 +496,7 @@ class WebAppOptions {
     this.headless,
     this.webPort,
     this.serverTimeout,
+    this.browser,
     this.browserArgs,
     this.channel,
     this.executablePath,
@@ -537,6 +538,7 @@ class WebAppOptions {
   final String? shard;
   final bool? headless;
   final int? webPort;
+  final String? browser;
   final String? browserArgs;
   final String? channel;
   final String? executablePath;
@@ -584,6 +586,7 @@ class WebAppOptions {
       'PATROL_WEB_GLOBAL_TIMEOUT': globalTimeout,
       'PATROL_WEB_SHARD': shard,
       'PATROL_WEB_HEADLESS': headless,
+      'PATROL_WEB_BROWSER': browser,
       'PATROL_WEB_BROWSER_ARGS': browserArgs,
       'PATROL_WEB_CHANNEL': channel,
       'PATROL_WEB_EXECUTABLE_PATH': executablePath,
